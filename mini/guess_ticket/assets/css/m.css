@@ -1,0 +1,94 @@
+html { -webkit-text-size-adjust: 100%; -webkit-touch-callout: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, img, input, legend, li, ol, p, pre, td, textarea, th, ul { margin: 0; padding: 0 }
+body { position: absolute; top: 0; left: 0; width: 100%; height: 100%; font: 14px/1.5 "Helvetica neue", Helvetica, Tahoma, Arial, "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", sans-serif; }
+.loading { width: 100%; height: 100%; }
+.loader { position: fixed; top: 50%; left: 50%; margin-left: -25px; margin-top: -25px; }
+.grid { max-width: 640px; height: 100%; margin: 0 auto; display: none; position: relative; }
+.index { position: relative; }
+.top { width: 640px; height: 668px; background: url(../img/guess_top.png) no-repeat; background-size: 100% 100%; position: relative; }
+.award { background: #fde4ba; position: relative; height: 660px; }
+.btn-guess { width: 350px; height: 110px; background: url(../img/guess.png) no-repeat; background-size: 100% 100%; position: absolute; top: 478px; margin: 0 auto; left: 0; right: 0; }
+.tips { position: absolute; top: 588px; color: #FFF; font-size: 22px; text-align: center; left: 0; right: 0; }
+.show { width: 168px; height: 108px; background: url(../img/show.png) no-repeat; background-size: 100% 100%; position: relative; left: 442px; top: -10px; }
+.best { width: 400px; padding: 40px 20px; position: relative; }
+.best-l { }
+.best-title { width: 146px; height: 34px; background: url(../img/award.png) no-repeat; background-size: 100% 100%; }
+.best-text { padding: 30px 0px; font-size: 20px; }
+.iphone-name { margin-top: 220px; text-align: center; height: 40px; line-height: 40px; font-size: 24px; color: #ce3038; }
+.iphone { width: 166px; height: 210px; background: url(../img/iphone6.png) no-repeat; background-size: 100% 100%; position: absolute; left: 442px; top: 30px; }
+.lucky { width: 400px; padding: 40px 20px; position: relative; }
+.lucky-l { }
+.lucky-title { width: 146px; height: 34px; background: url(../img/lucky.png) no-repeat; background-size: 100% 100%; }
+.lucky-text { padding: 30px 0px; font-size: 20px; }
+.ticket-name { margin-top: 100px; text-align: center; height: 40px; line-height: 40px; font-size: 24px; color: #ce3038; }
+.ticket { width: 178px; height: 92px; background: url(../img/ticket.png) no-repeat; background-size: 100% 100%; position: absolute; left: 442px; top: 100px; }
+.rule { position: relative; background: #f3252a; }
+.line { width: 640px; height: 6px; background: url(../img/line.png) no-repeat; background-size: 100% 100%; }
+.rule-title { width: 210px; height: 66px; background: url(../img/activity.png) no-repeat; background-size: 100% 100%; position: relative; left: 24px; top: 14px; }
+.rule-text { margin-top: 30px; }
+.rule-text ul { color: #fff600; padding: 10px 28px 20px 28px; }
+.rule-text ul li { list-style: none; font-size: 20px; line-height: 40px; }
+.overlay { position: fixed; left: 0; right: 0; top: 0; height: 100%; z-index: 10; background: rgba(20, 20, 20, .5); display: none; }
+.write-w { width: 420px; background: #fdedd3; background-size: 100% 100%; position: relative; top: 200px; margin: 0 auto; border: 4px solid #f9740e; border-radius: 6px; padding: 50px 30px; }
+.write-title { font-size: 26px; }
+.ticket-room { border: 2px solid #fde4ba; background: #FFF; height: 80px; margin: 20px 0px; position: relative; border-radius: 6px; }
+.room_input { height: 80px; line-height: 80px; border-radius: 6px; }
+.phone { border: 2px solid #fde4ba; background: #FFF; height: 80px; margin: 20px 0px; border-radius: 6px; position: relative; }
+.phone_input { height: 80px; line-height: 80px; border-radius: 6px; }
+.phone-tips { color: #878787; font-size: 24px; text-align: center; }
+.btn-submit { width: 320px; height: 106px; background: url(../img/submit.png) no-repeat; background-size: 100% 100%; position: relative; left: 0; right: 0; margin: 80px auto 0 auto; }
+input { border: none; padding: 0 20px; font-size: 24px; width: 380px; }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none !important; margin: 0; }
+.yuan { color: #ec1830; position: absolute; right: 24px; top: 0; line-height: 80px; font-size: 28px; }
+.scuess { width: 100%; height: 1700px; background: url(../img/scuess.png) no-repeat; background-size: 100% 100%; display: none; }
+.unfilled {/* display: none; */ }
+.filled { display: none; position: relative; }
+.modifty-text { width: 80%; font-size: 24px; color: #FFF; line-height: 100px; text-align: center; float: left; }
+.ticket-total { }
+.btn-modifty { width: 20%; color: #FFF; font-size: 24px; line-height: 100px; float: left; cursor: pointer; text-align: center; }
+.bg-modifty { width: 536px; height: 100px; background: url(../img/modifty.png) no-repeat; background-size: 100% 100%; position: absolute; top: 496px; margin: 0 auto; left: 0; right: 0; }
+@media all and (max-width:481px) {
+	.grid { width: 100%; height: 100%; margin: 0 auto; display: none; position: relative; font-size: 10px; }
+	.top { width: 100%; height: 334px; background: url(../img/guess_top.png) no-repeat; background-size: 100% 100%; }
+	.award { height: 380px; }
+	.btn-guess { width: 175px; height: 55px; top: 239px; }
+	.tips { top: 294px; font-size: 1.2em; }
+	.show { width: 84px; height: 54px; left: 221px; top: -5px; }
+	.best { width: 200px; padding: 20px 10px; }
+	.best-l { }
+	.best-title { width: 73px; height: 17px; }
+	.best-text { padding: 15px 0px; font-size: 1.2em; }
+	.iphone-name { margin-top: 110px; height: 20px; line-height: 20px; font-size: 1.4em; }
+	.iphone { width: 83px; height: 105px; left: 221px; top: 15px; }
+	.lucky { width: 200px; padding: 20px 10px; }
+	.lucky-l { }
+	.lucky-title { width: 73px; height: 17px; }
+	.lucky-text { padding: 15px 0px; font-size: 1.2em; }
+	.ticket-name { margin-top: 50px; height: 20px; line-height: 20px; font-size: 1.4em; }
+	.ticket { width: 89px; height: 46px; left: 221px; top: 50px; }
+	.rule { position: relative; background: #f3252a; }
+	.line { width: 100%; height: 3px; ba; }
+	.rule-title { width: 105px; height: 33px; left: 12px; top: 7px; }
+	.rule-text { margin-top: 15px; }
+	.rule-text ul { padding: 5px 14px 10px 14px; }
+	.rule-text ul li { list-style: none; font-size: 1.2em; line-height: 20px; }
+	.overlay { position: fixed; left: 0; right: 0; top: 0; height: 100%; z-index: 10; background: rgba(20, 20, 20, .5); display: none; }
+	.write-w { width: 210px; top: 100px; border: 2px solid #f9740e; border-radius: 3px; padding: 25px 15px; }
+	.write-title { font-size: 1.8em; }
+	.ticket-room { border: 1px solid #fde4ba; height: 40px; margin: 10px 0px; border-radius: 3px; }
+	.room_input { height: 40px; line-height: 40px; border-radius: 3px; }
+	.phone { border: 1px solid #fde4ba; height: 40px; margin: 10px 0px; border-radius: 3px; }
+	.phone_input { height: 40px; line-height: 40px; border-radius: 3px; }
+	.phone-tips { font-size: 1.4em; }
+	.btn-submit { width: 160px; height: 53px; margin: 40px auto 0 auto; }
+	input { border: none; padding: 0 10px; font-size: 1.4em; width: 190px; line-height: 40px; }
+	input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none !important; margin: 0; }
+	.yuan { right: 12px; line-height: 40px; font-size: 1.4em; }
+	.scuess { height: 850px; }
+	.unfilled { display: block; }
+	.filled {/* display: block; */ }
+	.modifty-text { font-size: 1.6em; line-height: 50px; }
+	.ticket-total { }
+	.btn-modifty { font-size: 1.6em; line-height: 50px; }
+	.bg-modifty { width: 268px; height: 50px; top: 248px; }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>叶问3大礼包</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <link rel="icon" type="image/gif" href="assets/images/share.png">
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/coupon.css">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+
+<body>
+    <div class="loading">
+        <div class="loader">
+            <div class="loader">
+                <div class="loader-inner pacman">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <!-- 首页 -->
+        <div class="index">
+            <div class="top">
+                <div class="order"></div>
+            </div>
+            <div class="btn-buy"></div>
+            <div class="coupon">
+                <ul class="coupon-list">
+                    <li>
+                        <img src="assets/images/card01.png"></li>
+                    <li>
+                        <img src="assets/images/card02.png"></li>
+                    <li>
+                        <img src="assets/images/card03.png"></li>
+                    <li>
+                        <img src="assets/images/card04.png"></li>
+                    <li>
+                        <img src="assets/images/card05.png"></li>
+                    <li>
+                        <img src="assets/images/card06.png"></li>
+                    <li>
+                        <img src="assets/images/card07.png"></li>
+                    <li>
+                        <img src="assets/images/card08.png"></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 我的订单 -->
+         <div class="myorder">
+            <div class="myorder-top">
+                <div class="order-total">
+                我的订单（2）
+                </div>
+                <div class="back"></div>
+            </div>
+            <div class="pay">
+                <ul class="pay-list">
+                    <li>
+                        <div class="pay-w">
+                            <div class="big-award">叶问大礼包</div>
+                            <div class="pay-date">购买日期：2016.02.15 12:00</div>
+                        </div>
+                        <div class="btn-pay">待支付</div>
+                    </li>
+                    <li>
+                        <div class="pay-w">
+                            <div class="big-award">叶问大礼包</div>
+                            <div class="pay-date">购买日期：2016.02.15 12:00</div>
+                        </div>
+                        <div class="btn-pay">待支付</div>
+                    </li>
+                </ul>
+            </div>
+             
+
+        </div>
+        <div id="exchange-page">
+        <div class="award-w">
+               <div class="award">叶问大礼包</div>
+                <div class="buy-date">购买日期：2016.02.15 12:00</div>
+        </div> 
+        <div class="coupon-buy">
+                <ul class="coupon-buy-list">
+                    <li>
+                        <img data-index="1" src="assets/images/card1.png"></li>
+                    <li>
+                        <img data-index="2" src="assets/images/card2.png"></li>
+                    <li>
+                        <img data-index="3" src="assets/images/card3.png"></li>
+                    <li>
+                        <img data-index="4" src="assets/images/card4.png"></li>
+                    <li>
+                        <img data-index="5" src="assets/images/card5.png"></li>
+                    <li>
+                        <img data-index="6" src="assets/images/card6.png"></li>
+                    <li>
+                        <img data-index="7" src="assets/images/card7.png"></li>
+                    <li>
+                        <img data-index="8" src="assets/images/card8.png"></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 弹出层 -->
+        
+        <div class="overlay">
+            <div class="coupon-box">
+               <div class="box-w">
+                   <div class="box-title">本来生活-30元红枣劵</div>
+                   <div class="box-date"></div>
+                   <div class="box-rule">活动规则：</div>
+                   <div class="box-text">下载本来生活网手机客户端或登入m.benlai.com，注册或使用已有账号进入兑换专区选取【兑换专用】优品本色新疆红枣4星加入购物车，同事挑选您喜欢的其他商品放入购物车。进入购物车结算，在结算页面选择使用优惠劵输入优惠劵密码，抵扣红枣费用。<br>提示：优品本色新疆红枣4星价值30元，凑单即可包邮。</div>
+               </div>
+               <div class="close"></div>
+               <div class="btn-exchange">立即兑换</div>
+            </div>
+           
+        </div>
+
+        <!-- 提交成功 -->
+        <div class="scuess"></div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="/assets/javascripts/wxShare.js?url=@curUrl"></script>
+-->
+<script>
+    window.shareData = {
+        imgUrl: "http://" + location.host + "/assets/images/share.png",
+        timeLineLink: "http://mp.weixin.qq.com/s?__biz=MzI0NjA1MjQyOA==&mid=402827544&idx=1&sn=606b3d6f85032af122136e59cb9c548d#rd",
+        tTitle: "我在@大银幕电影抢到了1.58元红包，你能超越我吗？",
+        tContent: "来晚一分钟，感觉自己错过了一个亿。"
+    }
+    window.onload = function() {
+
+        }
+        // DCAgent.init({appId:"E2E6DEE7CCDEE3919AD10A68359E6E61",virus:false});
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+body { overflow-y: auto; background-color: rgba(0, 0, 0, 0.1) !important; }
+.hide { display: none; }
+* { box-sizing: border-box !important; }
+#grid { width: 640px; margin: 0 auto; display: none; }
+.logo { padding-top: 20px; }
+.logo img { max-height: 150px; display: block; margin: 0 auto; }
+.btn { border-radius: 5px; background: transparent; border: 1px solid #1271db; color: #1271db; display: inline-block; height: 32px; outline: none; padding: 0 5px; text-align: center; text-decoration: none; text-transform: capitalize; cursor: pointer; }
+#rank { margin: 10px 0 0; font-size: 1.8em; line-height: 1.2em; text-align: center; }
+.btn_o { position: relative; text-align: center; margin: 10px; }
+button.again { display: inline-block; width: 35%; height: auto; padding: 6px 5px; border-radius: 40px; color: #f4511e; font-size: 1.8em; line-height: 1.6em; margin-right: 20px; border: 1px solid #f4511e; }
+button.nxt { display: inline-block; width: 35%; height: auto; padding: 6px 5px; border-radius: 40px; border-color: #f4511e; background: #f4511e; color: #fff; font-size: 1.8em; line-height: 1.6em; margin-right: 20px; }
+.rank { }
+.dashed { border-bottom: 1px dashed #000; font-size: 2em; margin-bottom: 10px; box-sizing: border-box !important; line-height: 1.6; }
+#lucy-rank { clear: both; }
+#ten-rank { clear: both; }
+#mine-rank { clear: both; }
+.ten-rank { position: relative; }
+.ten-rank li { width: 100%; height: auto; }
+.ten-rank li span { float: left; font-size: 1.8em; line-height: 4em; height: 4em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 20%; text-align: center; }
+.ten-rank li span img { width: 100px; }
+.ten-rank .award img { width: 76px; height: 48px; display: inline-block; outline: none; margin: 0 auto; padding: 0; }
+.lucy-rank li .lucky-avatar, .ten-rank .avatar img { width: 70px; height: 70px;	/*background-color: #ccc;*/ border-radius: 60px; display: inline-block; outline: none; margin: 0 auto; padding: 0; }
+.lucy-rank { position: relative; font-size: 1.8em; }
+.lucy-rank li { width: 33%; float: left; }
+.lucy-rank li .lucky-avatar { margin: 0 auto; display: block; }
+.lucy-rank li .lucky-name { position: relative; line-height: 3em; height: 3em; padding-left: 10px; text-align: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.lucy-rank li .lucky-text { text-align: center; padding: 10px 0; }
+.rank_color { color: #f4511e; }
+@media only screen and (max-width:480px) {
+	#grid { width: 100%; }
+	.logo { padding-top: 10px; }
+	.logo img { max-height: 100px; }
+	.btn { border-radius: 5px; background: transparent; border: 1px solid #1271db; color: #1271db; display: inline-block; height: 32px; outline: none; padding: 0 5px; text-align: center; text-decoration: none; text-transform: capitalize }
+	#rank { margin: 10px 0 0; font-size: 1.4em; line-height: 1.2em; }
+	.btn_o { position: relative; text-align: center; }
+	button.again { width: 35%; font-size: 1.6em; line-height: 1.2em; }
+	button.nxt { width: 50%; font-size: 1.6em; line-height: 1.2em; }
+	.rank { }
+	.dashed { border-bottom: 1px dashed #000; font-size: 1.4em; margin-bottom: 10px; margin-top: 10px; box-sizing: border-box !important; line-height: 1.6; text-indent: 4px; }
+	#lucy-rank { clear: both; padding: 0 4px; }
+	#ten-rank { clear: both; padding: 0 4px; }
+	#mine-rank { clear: both; padding: 0 4px; }
+	.ten-rank { position: relative; }
+	.ten-rank li { width: 100%; height: auto; }
+	.ten-rank li span { float: left; font-size: 1.3em; line-height: 3em; height: 4em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center; }
+	.ten-rank li span img { width: 60px; }
+	.award, .avatar { width: 15% !important; }
+	.name, .time, .score { width: 22% !important; }
+	.ten-rank .award img { width: 38px; height: 24px; outline: none; margin: 0 auto; padding: 0; display: block; vertical-align: middle; margin-top: 10px; }
+	.lucy-rank li .lucky-avatar, .ten-rank .avatar img { width: 50px; height: 50px;		/*background-color: #ccc;*/ border-radius: 25px; display: block; outline: none; margin: 0 auto; padding: 0; line-height: 4em; vertical-align: middle; }
+	.lucy-rank { position: relative; font-size: 1.3em; }
+	.lucy-rank li { width: 33%; }
+	.lucy-rank li .lucky-avatar { margin: 0 auto; display: block; }
+	.lucy-rank li .lucky-name { position: relative; line-height: 2em; height: 2em; padding-left: 5px; }
+	.lucy-rank li .lucky-text { text-align: center; padding: 5px 0; }
+}

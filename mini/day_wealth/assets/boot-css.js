@@ -1,0 +1,1 @@
+;(function(window){document.write('<link rel="stylesheet" href="http://192.168.0.22/h5_games/today/assets/eqShow-2.0.6.5.css"/>');})(window);
